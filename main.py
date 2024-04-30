@@ -2,8 +2,8 @@
 #CONEXÃO
 import telebot
 
-# CHAVE_API = "6797681651:AAHsCGY-Acb4Phi6BkoCxtDT_F95DHKYabs"
-CHAVE_API = "6320505988:AAFogWJhOK9eX31tt07CttgQAqLAQjMkKJE"
+# EXEMPLO_DE_CHAVE_API = "875d41ss5236D52:54125-A5564125"
+CHAVE_API = "coloque sua chave aqui"
 
 bot = telebot.TeleBot(CHAVE_API)
 
@@ -28,7 +28,7 @@ def opcao1(mensagem):
 
 @bot.message_handler(commands=["2"])
 def opcao2(mensagem):
-    bot.send_message(mensagem.chat.id, "Feedback para enviar sugestões, mande para este E-mail (braddteles@gmail.com)")
+    bot.send_message(mensagem.chat.id, "Feedback para enviar sugestões, mande para este E-mail (emailaqui@gmail.com)")
 
 @bot.message_handler(commands=["3"])
 def opcao3(mensagem):
